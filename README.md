@@ -15,3 +15,9 @@ To facilitate easy navigation between news pages, News Hub incorporates next and
 News Hub is designed to keep you informed and engaged, with a clean and intuitive user interface that allows you to focus on the news articles themselves. With its attention to detail, efficient loading mechanisms, and convenient navigation features, News Hub is the ideal platform for those seeking a comprehensive and user-friendly daily news experience.
 
 Stay connected, stay informed, and let News Hub be your go-to source for news. :v:
+
+A glimpse of the website :point_down:
+
+
+https://github.com/Mayuri13/News_Hub/assets/78290636/1fb60923-b5f9-42f1-9762-e3f7aef7f312
+

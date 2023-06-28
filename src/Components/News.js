@@ -16,7 +16,7 @@ export default function News(props) {
       const fetchData = async () => {
         try {
           const response = await axios.get(
-            `https://newsapi.org/v2/top-headlines?country=in&apiKey=6fc0cc7bca764e4585b5f6466d94f680&page=${page}&pageSize=${props.pageSize}`
+            `https://newsapi.org/v2/top-headlines?country=in&apiKey=${props.apiKey}&page=${page}&pageSize=${props.pageSize}`
           );
           setProgress(60)
           setarticles(response.data.articles);
@@ -29,11 +29,11 @@ export default function News(props) {
       };
   
       fetchData();
-    }, [page,props.pageSize]);
+    }, [page,props.pageSize,props.apiKey]);
     
     const updateNews = async ()=> {
         setProgress(10);
-        const url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=6fc0cc7bca764e4585b5f6466d94f680&page=${page}&pageSize=${props.pageSize}`; 
+        const url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=${props.apiKey}page=${page}&pageSize=${props.pageSize}`; 
         let data = await fetch(url);
         setProgress(60);
         let parsedData = await data.json()

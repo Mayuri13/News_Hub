@@ -6,6 +6,8 @@ import Categories from "./Pages/Categories";
 import Footer from "./Components/Footer";
 
 function App() {
+
+  const apiKey = process.env.REACT_APP_NEWS_API
   return (
     <BrowserRouter>
       <Navbar />
@@ -20,6 +22,7 @@ function App() {
             <Categories
               cat="business"
               pageSize={10}
+              apiKey={apiKey}
             />
           }
         />
@@ -29,6 +32,7 @@ function App() {
             <Categories
               cat="sports"
               pageSize={10}
+              apiKey={apiKey}
             />
           }
         />
@@ -38,6 +42,7 @@ function App() {
             <Categories
               cat="entertainment"
               pageSize={10}
+              apiKey={apiKey}
             />
           }
         />
@@ -47,6 +52,7 @@ function App() {
             <Categories
               cat="science"
               pageSize={10}
+              apiKey={apiKey}
             />
           }
         />
@@ -56,6 +62,7 @@ function App() {
             <Categories
               cat="technology"
               pageSize={10}
+              apiKey={apiKey}
             />
           }
         />
